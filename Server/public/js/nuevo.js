@@ -1,4 +1,4 @@
-$(document).ready(function (){
+	$(document).ready(function (){
 
 	if (localStorage.position){
 		$('#lugar')[0].value = localStorage.position
@@ -25,7 +25,7 @@ function onFileSelected(event, num) {
 //Guardar evento en DB
 function guardarEvento(evento){
 
-	var url = "http://192.168.1.120:3000/guardar/"
+	var url = "http://tecmoviles.cloudapp.net:3000/guardar/"
 	console.log(url);
 	
 	var xhr = createCORSRequest('POST', url);

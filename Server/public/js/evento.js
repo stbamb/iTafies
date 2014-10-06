@@ -4,7 +4,7 @@ $(document).ready(function (){
 	var a = window.location.toString();
 	var oid = a.substring(a.indexOf("html/")+5);
 	
-	var url = "http://192.168.1.120:3000/evento/"+oid;
+	var url = "http://tecmoviles.cloudapp.net:3000/evento/"+oid;
 	var xhr = createCORSRequest('GET', url);
 	if (!xhr) {
 		throw new Error('CORS not supported');

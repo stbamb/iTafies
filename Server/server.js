@@ -7,6 +7,7 @@ var http = require('http'),
 	path = require('path');
 	fs = require('fs');
 
+var uri = 'mongodb://admin:Proyecto1@ds039960.mongolab.com:39960/proyecto1'
 	
 var app = express();
 app.set('port', process.env.PORT || 3000);
@@ -106,16 +107,10 @@ app.post('/validarusuario', function (req, res) {
 });
 
 
- 
-http.createServer(app).listen(app.get('port'), function(){
-  console.log('Express server listening on port ' + app.get('port'));
-});
-
-
 
 //Get eventos de DB
 function getEvents(fn){
-	MongoClient.connect('mongodb://127.0.0.1:27017/proyecto1', function(err, db) {
+	MongoClient.connect(uri, function(err, db) {
 	
 		if(err) throw err;
 		
@@ -132,7 +127,7 @@ function getEvents(fn){
 
 //Buscar eventos de DB
 function searchEvents(params, fn){
-	MongoClient.connect('mongodb://127.0.0.1:27017/proyecto1', function(err, db) {
+	MongoClient.connect(uri, function(err, db) {
 		if(err) throw err;
 		
 		var collection = db.collection('evento');
@@ -148,7 +143,7 @@ function searchEvents(params, fn){
 
 //Get evento de DB
 function getEvent(oid, fn){
-	MongoClient.connect('mongodb://127.0.0.1:27017/proyecto1', function(err, db) {
+	MongoClient.connect(uri, function(err, db) {
 	
 		if(err) throw err;
 		
@@ -166,7 +161,7 @@ function getEvent(oid, fn){
 
 //Post evento en DB
 function postEvent(event, fn){
-	MongoClient.connect('mongodb://127.0.0.1:27017/proyecto1', function(err, db) {
+	MongoClient.connect(uri, function(err, db) {
 	
 		if(err) throw err;
 		
@@ -186,7 +181,7 @@ function postEvent(event, fn){
 
 //Update evento en DB
 function updateEvent(event, fn){
-	MongoClient.connect('mongodb://127.0.0.1:27017/proyecto1', function(err, db) {
+	MongoClient.connect(uri, function(err, db) {
 	
 		if(err) throw err;
 		
@@ -206,7 +201,7 @@ function updateEvent(event, fn){
 
 //Post usuario en DB
 function postUser(user, fn){
-	MongoClient.connect('mongodb://127.0.0.1:27017/proyecto1', function(err, db) {
+	MongoClient.connect(uri, function(err, db) {
 	
 		if(err) throw err;
 		
@@ -225,7 +220,7 @@ function postUser(user, fn){
 
 //Post usuario en DB
 function validateUser(user, fn){
-	MongoClient.connect('mongodb://127.0.0.1:27017/proyecto1', function(err, db) {
+	MongoClient.connect(uri, function(err, db) {
 		if(err) throw err;
 		
 		var collection = db.collection('usuario');
@@ -246,5 +241,9 @@ function validateUser(user, fn){
 }
 
 
+
+http.createServer(app).listen(app.get('port'), function(){
+  console.log('Express server listening on port ' + app.get('port'));
+});
 
 

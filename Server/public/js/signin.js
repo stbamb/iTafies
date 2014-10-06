@@ -8,7 +8,7 @@ $(document).ready(function (){
  //Guardar usuario en DB
 function guardarUsuario(usuario){
 
-	var url = "http://192.168.1.120:3000/crearusuario/"
+	var url = "http://tecmoviles.cloudapp.net:3000/crearusuario/"
 	console.log(url);
 	
 	var xhr = createCORSRequest('POST', url);

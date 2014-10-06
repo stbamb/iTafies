@@ -7,7 +7,7 @@ $(document).ready(function (){
  //Guardar usuario en DB
 function validarUsuario(usuario){
 
-	var url = "http://192.168.1.120:3000/validarusuario/"
+	var url = "http://tecmoviles.cloudapp.net:3000/validarusuario/"
 	console.log(url);
 	
 	var xhr = createCORSRequest('POST', url);

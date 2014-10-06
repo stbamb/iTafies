@@ -8,7 +8,7 @@ $(document).ready(function (){
 	//Si contiene parametros, indica que se realiza una búsqueda
 	if (params != ""){
 		params = params.substring(params.indexOf("=")+1);
-		var url = "http://192.168.1.120:3000/eventos/" + params;
+		var url = "http://tecmoviles.cloudapp.net:3000/eventos/" + params;
 		var xhr = createCORSRequest('GET', url);
 		if (!xhr) {
 			throw new Error('CORS not supported');
@@ -29,7 +29,7 @@ $(document).ready(function (){
 	
 	//Si no contiene parámentros, página principal.
 	else{
-		var url = "http://192.168.1.120:3000/eventos";
+		var url = "http://tecmoviles.cloudapp.net:3000/eventos";
 		var xhr = createCORSRequest('GET', url);
 		if (!xhr) {
 			throw new Error('CORS not supported');
