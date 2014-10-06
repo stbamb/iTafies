@@ -14,7 +14,7 @@
         <script type="text/javascript">
             document.addEventListener("deviceready", onDeviceReady, false); 
 			function onDeviceReady() {
-				navigator.app.loadUrl('http://165.225.128.119:3000', {openExternal:true});
+				navigator.app.loadUrl('http://tecmoviles.cloudapp.net', {openExternal:true});
 			}
         </script>
     </body>
