@@ -1,0 +1,4 @@
+Wireframes:
+1)Login (Titulo -> Login -> Mapa)
+2)Buscar (Mapa -> Búsqueda -> Resultados en lista -> Mostrar en mapa)
+3)Agregar evento (Mapa -> Pantalla de registro -> Confirmación)

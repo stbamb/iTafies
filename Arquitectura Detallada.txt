@@ -1,0 +1,13 @@
+Descripción detallada de arquitectura:
+
+Clases:
+	Ususario(FBid, Nombre, Género, Foto, Eventos creados[], Eventos asistidos[])
+	Evento(Nombre, Lugar, Horario, Precio, Categoría, Descripción, Fotos[], Aprobado, Activo)
+
+Tablas DB:
+	Usuario(IDUsuario, Nombre, Género, Foto)
+	EventoPorAprobar(IDEvento, IDUsuarioCreador, IDCategoría, Nombre, Lugar, Horario, Precio, Descripción)
+	EventoActivo(IDEvento, IDUsuarioCreador, IDCategoría, Nombre, Lugar, Horario, Precio, Descripción, Asistentes)
+	EventoHistórico(IDEvento, IDUsuarioCreador, IDCategoría, Nombre, Lugar, Horario, Precio, Descripción, Asistentes)
+	Categoría(IDCategoría, Nombre)
+	FotoEvento(IDFoto,IDEvento,Foto)

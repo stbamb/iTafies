@@ -1,0 +1,16 @@
+Este proyecto fue elaborado por:
+
+  Nombre                   Numero de carnet
+
+
+- Cristian Jimenez    -    Carnet: 201227268
+- Esteban Murillo     -    Carnet: 201266821
+- Manfred Torres      -    Carnet: 201211704
+
+Curso:
+
+Grupo:  01
+Codigo: IC-8041
+Nombre: Desarrollo de Aplicaciones para Dispositivos Móviles
+
+II Semestre, 2014.

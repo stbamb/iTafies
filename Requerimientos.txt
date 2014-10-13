@@ -1,0 +1,23 @@
+Requerimientos Funcionales:
+1.Login
+3.Mostrar Mapas (Google maps)
+4.Insertar imágenes
+5.Insertar evento
+6.Modificar Evento (Imagenes, Cambiar descripcion, Cambiar nombre, etc.)
+7.Eliminar evento
+8.Indicar asistencia
+9.Validar evento (Admin)
+10.Busqueda por localización
+11.Busqueda por categoria
+12.Busqueda por nombre del evento
+13.Busqueda por nombre del lugar
+14.Busqueda por precio
+15.Busqueda por fecha
+
+Requerimientos No Funcionales:
+1.Seguridad
+2.Base de datos (Usuarios, Eventos)
+3.Conectarse a facebook API
+4.Conectarse a Google Maps API
+5.Uso de GPS
+

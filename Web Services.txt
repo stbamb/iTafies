@@ -1,0 +1,7 @@
+Descripción de Web Services:
+
+-SQL Server para BD
+-Ruby para Backend
+-Google para host de backend
+-API de Google Maps
+-API de Facebook

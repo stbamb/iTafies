@@ -1,0 +1,12 @@
+Descripción de arquitectura de alto nivel:
+
+Categorías:
+	Concierto
+	Fiesta/VidaNocturna
+	Teatro
+	Infantiles
+	Deportivos
+	Restaurantes
+	Otros
+
+RIA
