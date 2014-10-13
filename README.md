@@ -1,6 +1,4 @@
-Proyecto-I-Final
+iTafies
 ================
 
-Manfred Torres S.
-Esteban Murillo B.
-Cristian Jiménez O.
+Proyecto I || TEC
